@@ -1,0 +1,21 @@
+[1.061s] Invoking command in '/home/helal/project_ws/src/robot_exploration': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/helal/project_ws/build/robot_exploration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/helal/project_ws/install/robot_exploration/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_exploration build --build-base /home/helal/project_ws/build/robot_exploration/build install --record /home/helal/project_ws/build/robot_exploration/install.log --single-version-externally-managed install_data
+[1.399s] running egg_info
+[1.425s] writing ../../build/robot_exploration/robot_exploration.egg-info/PKG-INFO
+[1.426s] writing dependency_links to ../../build/robot_exploration/robot_exploration.egg-info/dependency_links.txt
+[1.426s] writing entry points to ../../build/robot_exploration/robot_exploration.egg-info/entry_points.txt
+[1.426s] writing requirements to ../../build/robot_exploration/robot_exploration.egg-info/requires.txt
+[1.426s] writing top-level names to ../../build/robot_exploration/robot_exploration.egg-info/top_level.txt
+[1.479s] reading manifest file '../../build/robot_exploration/robot_exploration.egg-info/SOURCES.txt'
+[1.480s] writing manifest file '../../build/robot_exploration/robot_exploration.egg-info/SOURCES.txt'
+[1.480s] running build
+[1.480s] running build_py
+[1.480s] running install
+[1.486s] running install_lib
+[1.514s] running install_data
+[1.514s] running install_egg_info
+[1.542s] removing '/home/helal/project_ws/install/robot_exploration/lib/python3.12/site-packages/robot_exploration-0.0.0-py3.12.egg-info' (and everything under it)
+[1.542s] Copying ../../build/robot_exploration/robot_exploration.egg-info to /home/helal/project_ws/install/robot_exploration/lib/python3.12/site-packages/robot_exploration-0.0.0-py3.12.egg-info
+[1.543s] running install_scripts
+[1.707s] Installing autonomous_explorer script to /home/helal/project_ws/install/robot_exploration/lib/robot_exploration
+[1.708s] writing list of installed files to '/home/helal/project_ws/build/robot_exploration/install.log'
+[1.732s] Invoked command in '/home/helal/project_ws/src/robot_exploration' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/helal/project_ws/build/robot_exploration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/helal/project_ws/install/robot_exploration/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_exploration build --build-base /home/helal/project_ws/build/robot_exploration/build install --record /home/helal/project_ws/build/robot_exploration/install.log --single-version-externally-managed install_data

@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Differential Drive Plugin for Rear Wheels -->
+  <gazebo>
+    <plugin filename="libgz-sim-diff-drive-system.so" name="gz::sim::systems::DiffDrive">
+      <left_joint>wheel_fl_drive</left_joint>
+      <right_joint>wheel_fr_drive</right_joint>
+      <wheel_separation>0.57653</wheel_separation>
+      <wheel_radius>0.08</wheel_radius>
+      <odom_publish_frequency>30</odom_publish_frequency>
+      <max_velocity>3.0</max_velocity>
+      <max_linear_acceleration>1</max_linear_acceleration>
+      <min_linear_acceleration>-1</min_linear_acceleration>
+      <max_angular_acceleration>2</max_angular_acceleration>
+      <min_angular_acceleration>-2</min_angular_acceleration>
+      <max_linear_velocity>0.5</max_linear_velocity>
+      <min_linear_velocity>-0.5</min_linear_velocity>
+      <max_angular_velocity>1.0</max_angular_velocity>
+      <min_angular_velocity>-1.0</min_angular_velocity>
+      <odom_frame>odom</odom_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <topic>cmd_vel</topic>
+      <frame_id>odom</frame_id>
+      <tf_topic>tf</tf_topic>
+      <odom_topic>odom</odom_topic>
+      <!-- differential_drive_control-->
+      <namespace>/</namespace>
+      <remapping>cmd_vel:=/cmd_vel</remapping>
+      <left_joint>wheel_fl_drive</left_joint>
+      <right_joint>wheel_fr_drive</right_joint>
+      <wheel_separation>0.5</wheel_separation>
+      <wheel_radius>0.1</wheel_radius>
+      <max_wheel_torque>10</max_wheel_torque>
+      <update_rate>100</update_rate>
+    </plugin>
+  </gazebo>
+
+  <!-- Joint State Publisher Plugin -->
+  <gazebo>
+    <plugin filename="libgz-sim-joint-state-publisher-system.so"
+      name="gz::sim::systems::JointStatePublisher">
+      <joint_name>wheel_fl_drive</joint_name>
+      <joint_name>wheel_fr_drive</joint_name>
+      <joint_name>wheel_BL_joint</joint_name>
+      <joint_name>wheel_BR_joint</joint_name>
+      <joint_name>steering_joint_fl</joint_name>
+      <joint_name>steering_joint_fr</joint_name>
+      <topic>joint_states</topic>
+    </plugin>
+  </gazebo>
+
+  <!-- Pose Publisher Plugin -->
+  <gazebo>
+    <plugin filename="libgz-sim-pose-publisher-system.so" name="gz::sim::systems::PosePublisher">
+      <publish_link_pose>true</publish_link_pose>
+      <publish_sensor_pose>false</publish_sensor_pose>
+      <update_rate>1.0</update_rate>
+    </plugin>
+  </gazebo>
+
+  <!-- Gazebo Lidar Plugin -->
+  <gazebo reference="rplidar_link">
+    <sensor name="rplidar" type="lidar">
+      <topic>scan</topic>
+      <update_rate>100</update_rate>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1.0</resolution>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
+          </horizontal>
+          <vertical>
+            <samples>1</samples>
+            <resolution>1.0</resolution>
+            <min_angle>0</min_angle>
+            <max_angle>0</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <min>0.05</min>
+          <max>10.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </lidar>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+    </sensor>
+  </gazebo>
+
+  <!-- Material properties -->
+  <gazebo reference="base_link">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <gazebo reference="Link_FL">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="Link_FR">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="Link_BL">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="Link_BR">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <gazebo reference="rplidar_link">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+</robot>

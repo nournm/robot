@@ -1,0 +1,92 @@
+[0.245s] Invoking command in '/home/helal/project_ws/src/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/helal/project_ws/install/my_robot_navigation:/home/helal/project_ws/src/install/my_robot_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/helal/project_ws/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/helal/project_ws/src/install/robot_description
+[0.293s] -- The C compiler identification is GNU 13.3.0
+[0.342s] -- The CXX compiler identification is GNU 13.3.0
+[0.355s] -- Detecting C compiler ABI info
+[0.430s] -- Detecting C compiler ABI info - done
+[0.440s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.440s] -- Detecting C compile features
+[0.441s] -- Detecting C compile features - done
+[0.449s] -- Detecting CXX compiler ABI info
+[0.535s] -- Detecting CXX compiler ABI info - done
+[0.545s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.545s] -- Detecting CXX compile features
+[0.546s] -- Detecting CXX compile features - done
+[0.549s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.699s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.814s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.867s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.885s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.905s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.929s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.023s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.028s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.109s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.130s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.153s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.241s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.311s] -- Found ament_lint_auto: 0.17.2 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.419s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.419s] -- Configured cppcheck include dirs: 
+[1.419s] -- Configured cppcheck exclude dirs and/or files: 
+[1.420s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.420s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.421s] -- Added test 'lint_cmake' to check CMake code style
+[1.422s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.423s] -- Added test 'uncrustify' to check C / C++ code style
+[1.423s] -- Configured uncrustify additional arguments: 
+[1.424s] -- Added test 'xmllint' to check XML markup files
+[1.426s] -- Configuring done (1.2s)
+[1.438s] -- Generating done (0.0s)
+[1.443s] -- Build files have been written to: /home/helal/project_ws/src/build/robot_description
+[1.451s] Invoked command in '/home/helal/project_ws/src/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/helal/project_ws/install/my_robot_navigation:/home/helal/project_ws/src/install/my_robot_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/helal/project_ws/src/robot_description -DCMAKE_INSTALL_PREFIX=/home/helal/project_ws/src/install/robot_description
+[1.452s] Invoking command in '/home/helal/project_ws/src/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/helal/project_ws/install/my_robot_navigation:/home/helal/project_ws/src/install/my_robot_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/helal/project_ws/src/build/robot_description -- -j12 -l12
+[1.497s] [ 50%] [32mBuilding CXX object CMakeFiles/fake_lidar_sub.dir/src/fake_lidar_sub.cpp.o[0m
+[1.498s] [ 50%] [32mBuilding CXX object CMakeFiles/fake_lidar_pub.dir/src/fake_lidar_pub.cpp.o[0m
+[5.698s] [ 75%] [32m[1mLinking CXX executable fake_lidar_pub[0m
+[5.867s] [ 75%] Built target fake_lidar_pub
+[8.732s] [100%] [32m[1mLinking CXX executable fake_lidar_sub[0m
+[8.962s] [100%] Built target fake_lidar_sub
+[8.972s] Invoked command in '/home/helal/project_ws/src/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/helal/project_ws/install/my_robot_navigation:/home/helal/project_ws/src/install/my_robot_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/helal/project_ws/src/build/robot_description -- -j12 -l12
+[8.980s] Invoking command in '/home/helal/project_ws/src/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/helal/project_ws/install/my_robot_navigation:/home/helal/project_ws/src/install/my_robot_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/helal/project_ws/src/build/robot_description
+[8.987s] -- Install configuration: ""
+[8.987s] -- Installing: /home/helal/project_ws/src/install/robot_description/lib/robot_description/fake_lidar_pub
+[8.988s] -- Set non-toolchain portion of runtime path of "/home/helal/project_ws/src/install/robot_description/lib/robot_description/fake_lidar_pub" to ""
+[8.988s] -- Installing: /home/helal/project_ws/src/install/robot_description/lib/robot_description/fake_lidar_sub
+[8.991s] -- Set non-toolchain portion of runtime path of "/home/helal/project_ws/src/install/robot_description/lib/robot_description/fake_lidar_sub" to ""
+[8.991s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/launch
+[8.991s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/launch/test.launch.py
+[8.991s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/launch/display.launch.py
+[8.991s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/launch/gz_sim.launch.py
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/meshes
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/meshes/rplidar_a1m8.STL
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/meshes/Link_FL.STL
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/meshes/Link_BR.STL
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/meshes/base_link.STL
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/meshes/Link_FR.STL
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/meshes/Link_BL.STL
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/urdf
+[8.992s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/urdf/rplidar_a1m8.xacro
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/urdf/AutobotGDB.urdf.xacro
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/urdf/AutobotGDB.csv
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/urdf/plugins.xacro
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/config
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/config/bridge.yaml
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/config/autobot.rviz
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/worlds
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/worlds/home.sdf
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
+[8.993s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/environment/ament_prefix_path.dsv
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/environment/path.sh
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/environment/path.dsv
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/local_setup.bash
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/local_setup.sh
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/local_setup.zsh
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/local_setup.dsv
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/package.dsv
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/ament_index/resource_index/packages/robot_description
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/cmake/robot_descriptionConfig.cmake
+[8.994s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/cmake/robot_descriptionConfig-version.cmake
+[8.995s] -- Installing: /home/helal/project_ws/src/install/robot_description/share/robot_description/package.xml
+[8.996s] Invoked command in '/home/helal/project_ws/src/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/helal/project_ws/install/my_robot_navigation:/home/helal/project_ws/src/install/my_robot_navigation:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/helal/project_ws/src/build/robot_description

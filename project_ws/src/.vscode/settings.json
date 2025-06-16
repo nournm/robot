@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/zx/Mezzotint_ROS2_Project/install/mycobot_path_planner/lib/python3.12/site-packages",
+        "/home/zx/Mezzotint_ROS2_Project/install/mycobot630pro_description/lib/python3.12/site-packages",
+        "/home/zx/Mezzotint_ROS2_Project/install/cobot_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/zx/Mezzotint_ROS2_Project/install/mycobot_path_planner/lib/python3.12/site-packages",
+        "/home/zx/Mezzotint_ROS2_Project/install/mycobot630pro_description/lib/python3.12/site-packages",
+        "/home/zx/Mezzotint_ROS2_Project/install/cobot_interfaces/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
